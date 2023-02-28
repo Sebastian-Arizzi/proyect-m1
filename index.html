@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bastian - Educación Financiera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/jpg" href="./assets/img/favicon.png"/>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" href="./assets/animations.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container" id="nav">
+        <a href="#" ">
+          <img src="./assets/img/logo-B.png" alt="" />
+        </a>
+        <ul class="nav-links">
+          <li class="nav-items"><a href="#section-about">Nosotros</a></li>
+          <li class="nav-items"><a href="#section-services">Servicios</a></li>
+          <li class="nav-items"><a href="#section-contact">Contacto</a></li>
+        </ul>
+
+        <a href="#nav" class="nav-hamburguer">
+          <img src="./assets/img/menu-hamburguer.svg" alt="" class="nav-icon" />
+        </a>
+        <a href="#" class="nav-close">
+          <img src="./assets/img/menu-close.svg" alt="" class="nav-icon" />
+        </a>
+      </nav>
+      <div class="headline">
+        <h1>“Aprende a gestionar e invertir tu dinero”</h1>
+        <div class="container-btns">
+        <div class="btn-ini"><a href="login.html">Iniciar Sesión</a></div>
+        <div class="btn-reg"><a href="registro.html">Registrarse</a></div>
+      </div>
+      </div>
+      
+    </header>
+  <main>
+    <div id="section-about" class="sections">
+      <img src="./assets/img/lion.svg" class="img-about" alt="">
+      <p>
+       <span class="section--about">Somos un grupo de asesores financieros</span> dispuestos a ayudarte a mejorar tus finanzas personales a través de diferentes instrumentos y estrategias que están al alcance de todos pero que en la actualidad por falta de educación financiera parecen inaccesibles, esto último es lo que más nos motiva para brindar asesoramiento y así cambiar estos paradigmas establecidos en el común de la sociedad. 
+      </p>
+      
+    </div>
+
+    <div id="section-services" class="sections">
+      
+      <i class="fa-solid fa-coins fa-4x"></i>
+      <div class="container-cards">
+      <div class="card-services">
+        
+        <div class="card-services-title">
+          <h2>✓ Educación Financiera<br><span class="subtitle-card">Pack Premium</span></h2>
+        </div>
+        <div>
+          <img src="./assets/img/coin-g.png" class="card-img">
+        </div>
+        <div class="card-services-text">
+          <p>• Clases online <br> 
+             • Modalidad uno a uno <br>
+             • Contenido OnDemand 
+          </p>
+        </div>
+        <div class="card-services-btn">
+          <a href="#" class="btn-cards">Consultanos!</a>
+        </div>
+        </div>
+
+        <div class="card-services">
+          <div class="card-services-title">
+            <h2>✓ Educación Financiera<br><span class="subtitle-card">Pack Mid</span></h2>
+          </div>
+          <div class="card-img">
+            <img src="./assets/img/coin-p.png" alt="">
+          </div>
+          <div class="card-services-text">
+            <p>• Clases online <br> 
+               • Modalidad grupal <br>
+               • Contenido OnDemand 
+            </p>
+          </div>
+          <div class="card-services-btn">
+            <a href="#" class="btn-cards">Consultanos!</a>
+          </div>
+          </div>
+
+          <div class="card-services">
+            <div class="card-services-title">
+              <h2>✓ Educación Financiera<br><span class="subtitle-card">Pack Basic</span></h2>
+            </div>
+            <div class="card-img">
+              <img src="./assets/img/coin-b.png" alt="">
+            </div>
+            <div class="card-services-text">
+              <p>
+                 • Contenido OnDemand <br>
+                 <span class="invisible">• Contenido OnDemand <br>
+                 • Contenido OnDemand </span>
+              </p>
+            </div>
+            <div class="card-services-btn">
+              <a href="#" class="btn-cards">Consultanos!</a>
+            </div>
+            </div>
+
+          </div>    
+    </div>
+
+    <div id="section-contact" class="sections">
+      <div class="container-contact">
+      <form action="">
+        <h2>Contacto</h2>
+        <br>
+        <label for="nombre">Nombre y apellido</label><br>
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Ingresa tu nombre y apellido"
+        /><br /><br>
+
+        
+
+        <label for="telefono">Tel. Celular</label><br>
+        <input
+          type="tel"
+          id="telefono"
+          placeholder="Ingresa tu tel. o Celular"
+        /><br /><br />
+
+        <label for="correo">E-mail</label><br>
+        <input
+          type="email"
+          id="correo"
+          placeholder="Ingresa tu e-mail"
+        /><br /><br />
+
+        <label for="textArea">Tu mensaje</label><br />
+        <textarea name="area" id="textArea" cols="30" rows="10"></textarea>
+        <br />
+
+        <button type="submit">Envia tu mensaje</button><br />
+      </form>
+      <div class="more-info">
+        <h2>Encontranos en: </h2><br> 
+         
+         <h3><span><i class="fa-solid fa-phone"></i></span> +54 9 3513467445</h3><br>
+         <h3><span><i class="fa-solid fa-envelope-circle-check"></i></span> hello@bastian.com.ar</h3><br>
+         <h3><span><i class="fa-solid fa-location-dot"></i></span> Agustin Garzon 2767, Córdoba - Argentina</h3><br>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.592173049666!2d-64.1510057853059!3d-31.425360603829684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2b544c49241%3A0xa1c7c185046aaf29!2zQWd1c3TDrW4gR2FyesOzbiAyNzY3LCBYNTAwNiBDw7NyZG9iYQ!5e0!3m2!1ses-419!2sar!4v1677469590295!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    </div>
+  </main>
+    <footer>
+      <h4>By <a href="https://www.linkedin.com/in/sebasti%C3%A1n-arizzi-26135756/">Sebastián Arizzi</a></h4><br>
+      <h5>Copyright © 2023 BASTIAN. Todos los derechos reservados.</h5>
+    </footer>
+  </body>
+</html>

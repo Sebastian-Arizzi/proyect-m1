@@ -1,0 +1,140 @@
+/*FOR TABLET*/
+
+/*NAVBAR PRESETS*/
+@media (min-width: 768px) {
+  .container {
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  .nav {
+    --state-close: scale(0);
+    --state-hamburguer: scale(0);
+    --state-menu: translate(0);
+  }
+  .nav:target {
+    --state-close: scale(0);
+  }
+  .nav-links {
+    background-color: unset;
+    position: unset;
+    gap: 1.5em;
+    grid-auto-flow: column;
+    align-content: center;
+    gap: 2em;
+    padding: 0;
+    transform: unset;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+  }
+  .nav-items > a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: none;
+  }
+  .nav-items > a:hover {
+    transition-duration: 0.5s;
+
+    color: var(--text-color-primary);
+  }
+
+  /*HEADER PRESETS*/
+  .headline > h1 {
+    display: flex;
+    color: var(--text-color-primary);
+    margin-top: 200px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px 10px 5px;
+  }
+  .container-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .btn-ini,
+  .btn-reg {
+    display: flex;
+    color: var(--text-color-secondary);
+    font-size: 0.8rem;
+    padding: 5px 8px 5px;
+    border-radius: 3px;
+  }
+
+  .btn-ini:hover {
+    transition-duration: 0.5s;
+    background-color: var(--background-primary);
+  }
+  .btn-reg:hover {
+    transition-duration: 0.5s;
+    background-color: var(--background-primary);
+  }
+  .btn-ini {
+    background-color: var(--color-btn-primary);
+  }
+  .btn-reg {
+    background-color: var(--color-btn-secondary);
+  }
+  .btn-ini > a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+  }
+  .btn-reg > a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+  }
+
+  /*ABOUT PRESETS*/
+  #section-about {
+    padding: 50px;
+  }
+  /*SERVICES PRESETS*/
+  #section-services > i {
+    padding-top: 200px;
+  }
+  #section-services {
+    min-height: 1000px;
+  }
+  .container-cards {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 50px 15px 50px;
+    min-height: 1000px;
+    gap: 50px;
+  }
+  /*CONTACT PRESETS*/
+  #section-contact {
+    padding: 200px 15px 10px;
+  }
+  .container-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: flex-start;
+  }
+  .more-info > iframe {
+    margin-top: 25px;
+  }
+}
+/*FOR DESKTOP/NOTEBOOK*/
+@media (min-width: 1200px) {
+  .container-contact {
+    padding: 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: flex-start;
+  }
+  #section-contact {
+    padding: 50px 15px 10px;
+  }
+}
